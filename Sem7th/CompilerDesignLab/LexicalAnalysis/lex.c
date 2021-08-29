@@ -1,3 +1,7 @@
+/*
+    AUTHOR : Vishesh Sharma
+*/
+
 #include "lex.h"
 
 #define BUFFER_SIZE 1000

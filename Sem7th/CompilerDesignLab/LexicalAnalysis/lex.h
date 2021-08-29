@@ -1,3 +1,7 @@
+/*
+    AUTHOR : Vishesh Sharma
+*/
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
