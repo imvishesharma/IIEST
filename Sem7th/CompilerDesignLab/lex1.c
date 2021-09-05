@@ -32,8 +32,10 @@ int main(const int argc, const char *argv[])
         }
         buffer[i] = c;
         i++;
-    } while(true);
+    } while(1);
 
+    fclose(src);
+    
     generateLex(buffer);
 
     return 0;

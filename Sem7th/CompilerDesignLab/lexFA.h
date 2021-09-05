@@ -7,12 +7,12 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define SIZE_BUFFER 10e5
+#define SIZE_BUFFER 1000
 
 char _BUFFER[SIZE_BUFFER];
 int POINTER_BUFFER;
 
-void nextChar();
+char nextChar();
 
 void generateLex(char* buffer);
 void lexFA();
@@ -27,7 +27,7 @@ char nextChar() {
 }
 
 void generateLex(char* buffer) {
-    strcpy(buffer, _BUFFER);
+    strcpy(_BUFFER, buffer);
 
     _BUFFER[strlen(buffer)] = '\0';
     POINTER_BUFFER = -1;
@@ -36,9 +36,14 @@ void generateLex(char* buffer) {
 }
 
 void lexFA() {
-    while(true) {
-        if(CURR == '\0') {
+    char C;
+    while(1) {
+        C = nextChar();
+        printf("%c", C);
+        if(C == '\0') {
             break;
         }
     }
 }
+
+// /Users/inq/GitHub/IIEST/Sem7th/CompilerDesignLab
