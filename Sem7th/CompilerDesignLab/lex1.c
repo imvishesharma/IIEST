@@ -1,8 +1,9 @@
 /*
-    AUTHOR : Vishesh Sharma
+AUTHOR : Vishesh Sharma
+/Users/inq/GitHub/IIEST/Sem7th/CompilerDesignLab
 */
 
-#include "lexFA.h"
+#include "lexFA1.h"
 
 #define BUFFER_SIZE 1000
 
@@ -35,7 +36,7 @@ int main(const int argc, const char *argv[])
     } while(1);
 
     fclose(src);
-    
+
     generateLex(buffer);
 
     return 0;
