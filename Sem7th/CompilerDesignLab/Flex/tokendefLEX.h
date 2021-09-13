@@ -1,0 +1,9 @@
+#define SEMICOLON_TOK 1
+#define COMMA_TOK 2
+#define LCRLY_TOK 3
+#define RCRLY_TOK 4
+#define LPAREN_TOK 5
+#define RPAREN_TOK 6
+#define INT_TOK 7
+#define MAIN_TOK 8
+#define ID_TOK 9
